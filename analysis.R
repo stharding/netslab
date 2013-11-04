@@ -32,15 +32,34 @@ csvs <- list(
   ,on__d5v2
 )
 
+names <- list(
+   'acknowledgment: off delay: 0 +- 0'
+  ,'acknowledgment: on delay: 0 +- 0'
+  ,'acknowledgment: off delay: 100 +- 4'
+  ,'acknowledgment: on delay: 100 +- 40'
+  ,'acknowledgment: off delay: 500 +- 0'
+  ,'acknowledgment: on delay: 500 +- 0'
+  ,'acknowledgment: off delay: 50 +- 0'
+  ,'acknowledgment: on delay: 50 +- 0'
+  ,'acknowledgment: off delay: 50 +- 10'
+  ,'acknowledgment: on delay: 50 +- 10'
+  ,'acknowledgment: off delay: 5 +- 0'
+  ,'acknowledgment: on delay: 5 +- 0'
+  ,'acknowledgment: off delay: 5 +- 2'
+  ,'acknowledgment: on delay: 5 +- 2'
+  )
+
 x = 1
-for (i in csvs) {
+len = length(csvs)
+for ( i in 1:len ) {
   print(sprintf('============================================  Row %d =========================================================', x))
   x = x + 1
-  for (j in csvs) {
+  for (j in 1:len) {
     # t-test: # independent 2-group, 2 level IV
-    t <- t.test(i$Retransmit, j$Retransmit)
+    t <- t.test(csvs[[i]]$Retransmit, csvs[[j]]$Retransmit)
     if(t$p.value < 0.05)
     {
+      print(sprintf("%s, %s  (%d,%d)", names[i], names[j], i, j))
       print(c('p-value: ', t$p.value))
       print(t$estimate)
     }
