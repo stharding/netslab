@@ -1,11 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 import socket, threading, hashlib, sys
 
 debug = False
-
-
-
 
 class Client(threading.Thread):
   def __init__(self, sock, addr):
@@ -24,7 +21,6 @@ class Client(threading.Thread):
 
       while len(message) < length:  
         msg = self.socket.recv(64)
-        # if debug: print msg
         if msg == '': 
           if debug: print "should be done!!"
           break
@@ -50,16 +46,12 @@ def main():
   sock.bind((host, port))
   sock.listen(64)  
   
-#  try:
   while(True):
     client_sock, addr = sock.accept()
     t = Client(client_sock, addr)
     t.start()
     
   sock.close()
-#  except KeyboardInterrupt:
-#    print "Got an interupt in the main function"
-#    sock.close()
 
 if __name__ == "__main__":
     main()
