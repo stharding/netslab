@@ -1,0 +1,46 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/MacPorts 2013_2) (format=latex 2013.8.6)  4 NOV 2013 09:04
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**lab1.tex
+(./lab1.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 44 languages loaded.
+(/opt/local/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/opt/local/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+
+! LaTeX Error: File `titlesec.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: X
+
+ )
+(\end occurred when \ifx on line 5 was incomplete)
+(\end occurred when \ifx on line 5 was incomplete) 
+Here is how much of TeX's memory you used:
+ 200 strings out of 494182
+ 2147 string characters out of 6156703
+ 49105 words of memory out of 5000000
+ 3573 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 470 hyphenation exceptions out of 8191
+ 23i,1n,17p,156b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+No pages of output.
