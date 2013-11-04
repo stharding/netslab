@@ -2,7 +2,7 @@ setwd('~/Dropbox/CS585/Lab1/data/lab1/csvs/')
 
 off_d0v0    = read.csv( '0v0__ack_off_dly_lo.csv'    )
 on__d0v0    = read.csv( '0v0__ack_on__dly_lo.csv'    )
-off_d100v4  = read.csv( '100v40__ack_off_dly_hi.csv' )
+off_d100v40 = read.csv( '100v40__ack_off_dly_hi.csv' )
 on__d100v40 = read.csv( '100v40__ack_on__dly_hi.csv' )
 off_d500v0  = read.csv( '500v0__ack_off_dly_hi.csv'  )
 on__d500v0  = read.csv( '500v0__ack_on__dly_hi.csv'  )
@@ -18,7 +18,7 @@ on__d5v2    = read.csv( '5v2__ack_on__dly_lo.csv'    )
 csvs <- list(
    off_d0v0
   ,on__d0v0
-  ,off_d100v4
+  ,off_d100v40
   ,on__d100v40
   ,off_d500v0
   ,on__d500v0
@@ -35,7 +35,7 @@ csvs <- list(
 names <- list(
    'acknowledgment: off delay: 0 +- 0'
   ,'acknowledgment: on delay: 0 +- 0'
-  ,'acknowledgment: off delay: 100 +- 4'
+  ,'acknowledgment: off delay: 100 +- 40'
   ,'acknowledgment: on delay: 100 +- 40'
   ,'acknowledgment: off delay: 500 +- 0'
   ,'acknowledgment: on delay: 500 +- 0'
