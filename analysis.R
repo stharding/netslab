@@ -59,13 +59,13 @@ for ( i in 1:len ) {
     t <- t.test(csvs[[i]]$Retransmit, csvs[[j]]$Retransmit)
     if(t$p.value < 0.05)
     {
-      print(sprintf("%s, %s  (%d,%d)", names[i], names[j], i, j))
+      print(sprintf("(%d,%d) %s, %s", i, j, names[i], names[j]))
       print(c('p-value: ', t$p.value))
       print(t$estimate)
     }
     else
     {
-      print("N/A")
+      print(sprintf("(%d,%d) %s, %s :::::::::::::: NO STATISTICAL SIGNIFICANCE", i, j, names[i], names[j]))
     }
   }
 }
